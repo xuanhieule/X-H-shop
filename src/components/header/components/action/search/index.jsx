@@ -1,9 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import logo from "../../../../../constant/logo/logo.png";
-import "./style.scss";
 import { Input } from "antd";
 import "antd/dist/antd.css";
+import React from "react";
+import logo from "../../../../../constant/logo/logo.png";
+import "./style.scss";
 SearchHeader.propTypes = {};
 const { Search } = Input;
 const onSearch = (value) => console.log(value);

@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Carousel } from "antd";
-import "./style.scss"
+import React from "react";
+import "./style.scss";
 function Courasel(props) {
 
   let urlCarousel = [

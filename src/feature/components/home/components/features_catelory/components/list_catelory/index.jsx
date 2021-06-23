@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Col, Row } from "antd";
+import { Col } from "antd";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 ListCatelory.propTypes = {
     catelory : PropTypes.object.isRequired,

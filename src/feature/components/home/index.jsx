@@ -1,9 +1,9 @@
-import React from "react";
 import { Col, Row } from "antd";
 import "antd/dist/antd.css";
-import Carousel from "./components/Courasel"
-import Features_Catelory from "./components/features_catelory"
-import Recommend from "./components/recomend"
+import React from "react";
+import Carousel from "./components/Courasel";
+import FeaturesCatelory from "./components/features_catelory";
+import Recommend from "./components/recomend";
 
 function Home(props) {
   return (
@@ -11,7 +11,7 @@ function Home(props) {
       <Row justify="center">
         <Col sm={24} md={24} lg={14}>
           <Carousel />
-          <Features_Catelory />
+          <FeaturesCatelory />
           <Recommend />
   
         </Col>

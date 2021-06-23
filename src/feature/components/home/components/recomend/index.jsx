@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
 import RecommendMen from './components/men'
-import RecommendWoman from './components/woman'
 import RecommendPhone from './components/phone'
+import RecommendWoman from './components/woman'
+
 
 Recommend.propTypes = {
 

@@ -1,6 +1,6 @@
 
+import { Route } from "react-router";
 import { Switch } from "react-router-dom";
-import { Redirect, Route } from "react-router";
 import Home from "../feature/components/home";
 
 function Routes() {

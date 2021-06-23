@@ -1,10 +1,10 @@
-import React from "react";
-import { Col, Row } from "antd";
+import { Row } from "antd";
 import "antd/dist/antd.css";
-import "./style.scss";
+import React from "react";
 import ListCatelory from "./components/list_catelory";
+import "./style.scss";
 
-function Features_Catelory(props) {
+function FeaturesCatelory(props) {
   let listImg = [
     {
       id: "1",
@@ -61,6 +61,6 @@ function Features_Catelory(props) {
   );
 }
 
-Features_Catelory.propTypes = {};
+FeaturesCatelory.propTypes = {};
 
-export default Features_Catelory;
+export default FeaturesCatelory;

@@ -1,7 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 import Product from '../../../../../../../constant/product';
-import "./style.scss"
+import "./style.scss";
 
 
 function RecommendWoman(props) {
