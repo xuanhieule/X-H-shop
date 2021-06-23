@@ -1,0 +1,11 @@
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+}

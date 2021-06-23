@@ -1,0 +1,9 @@
+.Carousel{
+    margin-top: 3rem;
+    &__content{
+        &--img{
+            height: 47.5rem;
+            width: 100%;
+        }
+    }
+}

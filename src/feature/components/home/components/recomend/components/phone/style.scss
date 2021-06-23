@@ -1,0 +1,73 @@
+.banner{
+    display: block;
+    margin-top: 4rem;
+    color: white;
+    position: relative;
+    &__img{
+        position: absolute;
+        height: 38rem;
+        width: 111rem;
+    }
+    &__content{
+        position: absolute;
+        top: 10rem;
+        left: 65rem;
+        &--title{
+            font-size: 3rem;
+            font-weight: 700;
+            color: white !important;
+        }
+        &--description{
+            font-size: 2rem;
+            font-weight: 500;
+            color: white !important;
+        }
+        &--button{
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    }
+    
+}
+
+.phone{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 5rem;
+    &__left{
+        margin-top: 42rem;
+        width: 53.7rem;
+        height: 83rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // gap: 3.5rem;
+        div{}
+    }
+    &__right{
+        display: block;
+        margin-top: 4rem;
+        &--banner{
+            position: relative;
+        }
+        &--img{
+            margin-top: 38rem;
+            width: 53.7rem;
+            height: 79.5rem;
+        }
+        &--content{
+            position: absolute;
+            top:20rem;
+            left: 5rem;
+        }
+        &--title {
+            @extend .banner__content--title;
+        }
+        &--description{
+            @extend .banner__content--description;
+        }
+        &--button{
+            @extend .banner__content--button;
+        }
+    }
+}

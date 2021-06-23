@@ -1,0 +1,20 @@
+.authentidication{
+    width: 280rem;
+    color: #b2bec3;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 1.7rem;
+    justify-content: center;
+    &:hover{
+        color: #fc6514;
+    }
+    &__icon {
+        // @extend .authentidication;
+        font-size: 2.8rem;
+        margin: 0 1.5rem 0 1.5rem;
+        
+    }
+}

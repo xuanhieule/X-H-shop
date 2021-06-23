@@ -1,0 +1,23 @@
+.title-catelogy{
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fc6514;
+}
+.catelory{
+    height: 17rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    &__name{
+        margin-top: 2rem;
+        color: #2d3436;
+        font-size: 1.6rem;
+        font-weight: 600;
+        
+    }
+    &__img{
+        height: 14rem;
+        width: 12rem;
+    }
+}

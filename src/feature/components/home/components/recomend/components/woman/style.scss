@@ -1,0 +1,21 @@
+.woman{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    &__left{
+        margin-top: 4rem;
+        &--img{
+            width: 53.7rem;
+            height: 79.5rem;
+        }
+    }
+    &__right{
+        margin-top: 4rem;
+        width: 53.7rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
+}

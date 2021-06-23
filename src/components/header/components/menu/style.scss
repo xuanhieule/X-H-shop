@@ -1,0 +1,23 @@
+.menu{
+    border-top: 0.1rem solid #f0f2f3;
+    border-bottom: 0.1rem solid #f0f2f3;
+    
+    &__list{
+        display: flex;
+        justify-self: baseline;
+        margin-top: 1rem;
+        justify-content: center;
+        &--item{
+            
+            margin-right: 3rem;
+            color: #b2bec3;
+            font-size: 1.6rem;
+            font-weight: 700;
+            list-style: none;
+            cursor: pointer;
+            &:hover{
+                color: #fc6514;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.search{
+    display: flex;
+
+    &__logo{
+        height: 5rem;
+        margin-top: 0.5rem;
+    }
+    &__input{
+        margin-top: 1.6rem;
+        margin-left: 2rem;
+        width: 63.5rem;
+    }
+}
