@@ -6,18 +6,24 @@
         display: flex;
         justify-self: baseline;
         margin-top: 1rem;
-        justify-content: center;
-        &--item{
+        justify-content: space-between;
+        
+        &--item{   
             
-            margin-right: 3rem;
+            list-style: none;
+            cursor: pointer;
+        }
+        &--catelory{
             color: #b2bec3;
             font-size: 1.6rem;
             font-weight: 700;
-            list-style: none;
-            cursor: pointer;
             &:hover{
                 color: #fc6514;
             }
         }
+    }
+    .item-active{
+        color: #fc6514;
+        
     }
 }

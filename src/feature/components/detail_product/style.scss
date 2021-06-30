@@ -1,0 +1,113 @@
+.detail{
+    display: flex;
+    justify-content: space-between;
+    &__list-images{
+        width: 5.5rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        &--image{
+            width: 5.5rem;
+            height: 7.5rem;
+            border: 1px solid #b2bec3;
+            border-radius: 0.5rem;
+        }
+    }
+    &__image{
+        width: 60rem;
+        &--number{
+            background: #636e72;
+            width: 6rem;
+            height: 3rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            border-radius: 2rem;
+        }
+        &--image{
+            width: 60rem;
+            //  
+            border-radius: 0.5rem;
+        }
+    }
+    &__description{
+        width: 35rem;
+        // border: 1px solid #b2bec3;
+        &--list-type{
+            display: grid;
+            grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
+            grid-gap: 2rem;
+            margin-top: 2rem;
+        }
+        &--name{
+            font-size: 1.6rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0 !important;
+        }
+        &--title{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        &--image{
+            width: 5.5rem;
+            height: 7.5rem;
+            border: 1px solid #b2bec3;
+            border-radius: 0.5rem;
+            
+        }
+        &--list-item{
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            display: grid;
+            grid-template-columns: 5rem 5rem 5rem 5rem 5rem 5rem 5rem;
+        
+        }
+        &--list-itemSize{
+            @extend .detail__description--list-item;
+            grid-template-columns: 5rem 5rem 5rem 5rem 5rem 5rem;
+            gap:1rem;
+        
+        }
+        &--price{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #d63031;
+            margin-bottom: 1rem;
+        }
+        &--list-size{
+            display:"flex",
+        }
+        &--button{
+            width: 100%;
+            height: 5rem;
+            font-size: 2rem;
+            background: #0984e3;
+            color: #fff;
+            border:none;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+        &--detail{
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            h2{
+                font-size: 1.8rem;
+                margin: 1rem 0;
+            }
+            ul{
+                li{ 
+                    margin-left: 3rem;
+                    list-style-type: circle;
+                    font-size: 1.6rem;
+                }
+            }
+            p{
+                text-align:justify ;
+            }
+        }
+    }
+}

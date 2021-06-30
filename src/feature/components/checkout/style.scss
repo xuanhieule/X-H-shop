@@ -1,0 +1,167 @@
+.checkout{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        &__head{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        &__form{
+            width: 56rem;
+
+            &__customer{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            &__select{
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+        .ant-select-selector{
+            height: 5rem !important;
+            border-radius: 0.5rem;
+            :focus{
+                color: #fc6514 !important;
+            }
+            .ant-select-selection-item{
+                margin-top: 1rem !important;
+            }
+        }
+
+        .ship{
+            .ant-checkbox-wrapper{
+                height: 7rem;
+                background: #f8f8f8;
+                width: 100%;
+                margin-bottom:2rem ;
+                border-radius: 0.5rem;
+                .ant-checkbox{
+                    top:-0.9rem !important;
+                    margin-left: 2rem;
+                }
+                
+            }
+            .ship__method{
+                display: flex;
+                &__img{
+                    margin-top: 2rem;
+                    margin-left: 2rem;
+                }
+                &__detail{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    font-size: 16px;
+                    
+                    .top{
+                        margin: 0;
+                        font-size: 1.5rem;
+                    }
+                    .bot{
+                        margin: 0;
+                        font-size: 1.3rem;
+                    }
+                }
+                
+            }
+           
+            
+        }
+        .submit{
+            width: 100%;
+            padding: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: white;
+            background: #fc6514;
+            border: none;
+            border-radius: 0.5rem;
+            transition: opacity 0.2s;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .right{
+        width: 48rem;
+        margin-top: 6.5rem;
+       
+        
+        &__head{
+            font-size: 1.5rem;
+            padding: 2rem 0 0rem 2rem;
+            font-weight: 600;
+            border: 1px solid #eeeeee;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            background: #f8f8f8;
+        }
+        &__list-products{
+            display: flex;
+            width: 100%;
+            border-left:1px solid #eeeeee;
+            border-right:1px solid #eeeeee;
+            border-bottom:1px solid #eeeeee;
+            padding: 2rem;
+            .product__img{
+                width: 7rem;
+                height: 8rem;
+            }
+            .product__info{
+                margin-left: 3rem;
+                width: 100%;
+                &__name{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin: 0;
+                }
+                &__detail{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                }
+                &__price{
+                    display: flex;
+                    justify-content: space-between;
+                    .left__qty{
+
+                    }
+                    .right__pricetolal{
+                        font-size:  1.6rem;
+                        font-weight: 600;
+
+                    }
+                }
+            }
+        }
+        &__price{
+            border-left:1px solid #eeeeee;
+            border-right:1px solid #eeeeee;
+            border-bottom:1px solid #eeeeee;
+            background: #f8f8f8;
+            .price-total{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 2rem;
+                &__label{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                &__price{
+                    font-size:  1.6rem;
+                        font-weight: 700;
+                }
+            }
+        }
+        
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #fc6514;
+        border-color: #fc6514;
+      }
+
+}

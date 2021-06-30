@@ -3,14 +3,13 @@ import React from 'react';
 import "./style.scss"
 function Cart(props) {
     return (
-        <div className="cart">
-            <ShoppingCartOutlined className="cart__icon" />
-            <span className="cart__number">1</span>
+        <a href="/gio-hang">
+            <div className="cart-icon">
+            <ShoppingCartOutlined className="cart-icon__icon" />
+            <span className="cart-icon__number">1</span>
         </div>
+        </a>
     )
 }
-
-
-
 export default Cart
 

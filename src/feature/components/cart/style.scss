@@ -1,0 +1,167 @@
+.cart{
+    display: flex;
+    margin: 0 !important;
+    justify-content: space-between;
+    .products{
+        width: 55rem;
+        .head{
+            padding: 6.5rem 0 1.5rem 0;
+            &__left{
+                font-size: 2rem;
+                font-weight: 700;
+                color: #2d3436;
+            }
+            &__right{
+                @extend .head__left;
+                float: right;
+                clear: right;
+            }
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #dfe6e9;
+            border-radius: 1rem;
+            
+            &__line{
+                width: 100%;
+                border-top: 1px solid #dfe6e9;
+            }
+            .product-buy{
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
+                &__img{
+                    height: 12rem;
+                    width: 11rem;
+                    cursor: pointer;
+                    margin-left: 2rem;
+                }
+                &__item{
+                    width: 33.5rem;
+                    float: right;
+                    clear: right;
+                    
+                    &__name{
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        cursor: pointer;
+                        &:hover{
+                            color: #0984e3;
+                        }
+                    }
+                    &__close{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        float: right;
+                        clear: right;
+                        margin-top: 0.5rem;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        &:hover{
+                            box-shadow: 3px 3px rgb(197, 193, 193);
+                        }
+                    }
+                    &__info-product{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        margin: 1rem 0 3rem 0;
+                    }
+                    &__edit{
+                        color: #0984e3;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                        cursor: pointer;
+                        &:hover{
+                            color: #0432ff;
+                        }
+                        
+                    }
+                    &__price{
+                        color: #d63031;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        float: right;
+                        clear: right;
+                    }
+                    &__add-product{
+                        margin-top: 1.5rem;
+                        border: 1px solid #b2bec3;
+                        background: #fff;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem 1.5rem;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 2px 2px #e2e2e2;
+                        }
+                    }
+                }
+            }
+            
+
+        }
+
+    }
+    .buy{
+        margin-top: 5rem;
+        width: 43rem;
+        background: #f7f8f9;
+        height: 15rem;
+        position: relative;
+        border-radius: 0.5rem;
+        &__subtotal{
+            padding: 1.5rem;
+            &__title{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            &__price{
+                @extend .buy__subtotal__title;
+                float: right;
+                clear: right;
+            }
+        }
+        &__line{
+            width: 100%;
+            border-top: 1px solid #b2bec3;
+        }
+        &__ship{
+            padding: 1.5rem;
+        }
+        &__ship__left{
+            font-size: 1.6rem;
+        }
+        &__ship__right{
+            font-size: 1.6rem;
+            color: #636e72;
+            font-style: italic;
+            float: right;
+            clear: right;
+        }
+        &__submit{
+            font-size: 2rem;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin: 1.5rem;
+            width: 40rem;
+            padding: 1.5rem;
+            top:10.5rem;
+            background: #0984e3;
+            border:none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            &:hover{
+                opacity: 0.8;
+                box-shadow: 2px 2px #e2e2e2;
+            }
+        }  
+    }
+    .recommend{
+
+    }
+}

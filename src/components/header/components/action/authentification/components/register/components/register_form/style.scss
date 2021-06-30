@@ -1,0 +1,18 @@
+.form{
+    &__button{
+        width: 100%;
+        padding: 1.5rem;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        &--submit{
+            background: #fc6514;
+        }
+        &--fb{
+            background: #3b5998;
+        }
+    }
+}

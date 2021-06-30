@@ -1,0 +1,41 @@
+.choose{
+    width: 25rem;
+    &__filter{
+        border-bottom: 1px solid rgb(217, 217, 217);
+    }
+    &__title{
+        margin-left: 0;
+        display: flex;
+        width: 25rem;
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__name2{
+        margin-left: 2.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__icon{
+        float:right;
+        clear:right;
+        margin-top: 0.7rem;
+        font-size: 1.5rem;
+        color: #2d3436;
+        
+    }
+}
+.ant-collapse-header{ 
+    padding: 1.5rem 0 !important;
+}
+.ant-collapse-header::after{
+    display: none;
+}
+.ant-collapse-content-box{
+    padding: 0 !important;
+}
+.ant-collapse{
+    background-color: white !important;
+    border: none !important;
+}

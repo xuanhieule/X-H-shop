@@ -1,0 +1,36 @@
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    &__filter{
+        margin-right: 4rem;
+    }
+    &__content{
+        
+        &--action{
+        width: 82.2rem;
+        height: 6.2rem;
+        padding-top: 1.5rem;
+        justify-content: baseline;
+        }
+        &--show{
+            font-size: 1.6rem;
+            font-weight: 700;
+            float: left;
+            
+        }
+        &--sort{
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fc6514;
+            float: right;
+            clear: right;
+        }
+    }
+    &__content--product{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
+}
