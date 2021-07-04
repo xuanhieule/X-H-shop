@@ -1,10 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Row, Col } from "antd";
+import { Carousel, Col, Row, Select } from "antd";
 import "antd/dist/antd.css";
+import React from "react";
 import "./style.scss";
-import { Carousel } from "antd";
-import { Select } from "antd";
 
 function DetailProduct(props) {
   const listImg = [

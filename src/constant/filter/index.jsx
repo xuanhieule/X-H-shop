@@ -1,18 +1,17 @@
-import { PlusOutlined, FilterOutlined } from "@ant-design/icons";
-import { Checkbox } from "antd";
+import { FilterOutlined, PlusOutlined } from "@ant-design/icons";
+import { Checkbox, Collapse } from "antd";
 import "antd/dist/antd.css";
 import { React, useState } from "react";
-import ListChoose from "./components/list_choose";
-import { Collapse } from "antd";
 import "./style.scss";
 function Filter(props) {
-  const { name, listChoose } = props;
+  // const { name, listChoose } = props;
   const { Panel } = Collapse;
-  const [hidden, setHidden] = useState(true);
+  // const [hidden, setHidden] = useState(true);
   const [plus, setPlus] = useState(<PlusOutlined className="choose__icon" />);
 
   function onChange(e) {
     console.log(`checked = ${e.target.checked}`);
+    setPlus();
   }
   function callback(key) {
     console.log(key);

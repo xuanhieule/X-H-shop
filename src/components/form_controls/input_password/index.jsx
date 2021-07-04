@@ -1,19 +1,20 @@
-import {React, useState} from "react";
-import { EyeOutlined,EyeInvisibleOutlined } from '@ant-design/icons';
+import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
+import { React, useState } from "react";
 import { Controller } from "react-hook-form";
 import "./style.scss";
 
 function InputPasswordField(props) {
   const { form, name, label, disabled } = props.atribute;
-  const {fontSize, width, height, margin } = props.styleInput;
+  const { width, height } = props.styleInput;
   const [passwordShown, setPasswordShown] = useState(false);
-  const [eye, setEye] = useState(<EyeOutlined/>);
+  const [eye, setEye] = useState(<EyeOutlined />);
   const togglePasswordVisiblity = () => {
     setPasswordShown(passwordShown ? false : true);
-    passwordShown? setEye(<EyeInvisibleOutlined/>): setEye(<EyeOutlined/>)
+    passwordShown ? setEye(<EyeInvisibleOutlined />) : setEye(<EyeOutlined />);
   };
   return (
     <Controller
+      disabled={disabled}
       name={name}
       control={form.control}
       render={({ onChange, name, value }) => (
@@ -23,7 +24,7 @@ function InputPasswordField(props) {
             name={name}
             value={value}
             className="input-outline"
-            style={{ width: width, height: height}}
+            style={{ width: width, height: height }}
             onChange={onChange}
           />
           <label>{label}</label>

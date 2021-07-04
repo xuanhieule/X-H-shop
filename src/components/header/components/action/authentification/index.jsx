@@ -1,10 +1,10 @@
 import { UserOutlined } from "@ant-design/icons";
-import React, { useState } from 'react';
-import { Modal, Button } from "antd";
-import "./style.scss";
+import { Modal } from "antd";
 import "antd/dist/antd.css";
-import Login from './components/login'
-import Register from './components/register'
+import React, { useState } from 'react';
+import Login from './components/login';
+import Register from './components/register';
+import "./style.scss";
 function Authentification(props) {
 
   const [isModalVisible, setIsModalVisible] = useState(false);

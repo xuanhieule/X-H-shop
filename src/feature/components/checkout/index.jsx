@@ -1,14 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Row, Col } from "antd";
-import "antd/dist/antd.css";
-import { useForm, Controller } from "react-hook-form";
-import InputField from "../../../components/form_controls/input";
-import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Checkbox } from "antd";
+import { Checkbox, Col, Row, Select } from "antd";
+import "antd/dist/antd.css";
+import React from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import InputField from "../../../components/form_controls/input";
 import Truck from "./icon/Truck";
-import { Select } from "antd";
 import "./style.scss";
 
 CheckOut.propTypes = {};

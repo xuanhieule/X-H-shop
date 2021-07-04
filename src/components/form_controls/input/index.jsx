@@ -4,7 +4,7 @@ import "../style/style.scss";
 
 function InputField(props) {
   const { form, name, label, disabled } = props.atribute;
-  const {fontSize, width, height, margin} = props.styleInput;
+  const { width, height} = props.styleInput;
   return (
     <Controller
       name={name}
@@ -12,6 +12,7 @@ function InputField(props) {
       render={({ onChange, name, value }) => (
         <div className="textfield-outline" >
           <input
+            disabled ={disabled}
             type="text"
             name={name}
             value={value}

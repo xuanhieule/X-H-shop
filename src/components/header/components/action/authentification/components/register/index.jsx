@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import RegisterForm from './components/register_form'
+import RegisterForm from './components/register_form';
 
 Register.propTypes = {
     

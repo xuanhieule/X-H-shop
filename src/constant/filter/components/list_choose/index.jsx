@@ -1,6 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { Checkbox } from 'antd';
+import React from 'react';
 
 function ListChoose(props) {
     function onChange(e) {
